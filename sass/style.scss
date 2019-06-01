@@ -1,0 +1,176 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 1rem;
+  color: #303137;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #333335;
+  .brand {
+    font-family: "Lobster", cursive;
+    padding: 26px;
+    color: #c8aa2d;
+    font-size: 25px;
+  }
+  .navflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navlinks {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    text-transform: uppercase;
+    li {
+      font-size: 14px;
+      padding: 0 10px;
+      line-height: 72px;
+      &:hover {
+        background-color: #545659;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.welcome {
+  background-image: url("https://images.pexels.com/photos/917475/pexels-photo-917475.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 85vh;
+  object-fit: cover;
+  position: relative;
+  .slogan {
+    color: white;
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex;
+    font-family: Catamaran;
+    min-width: 800px;
+    h2 {
+      font-size: 35px;
+      text-transform: capitalize;
+      font-style: italic;
+    }
+    h1 {
+      font-size: 65px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-bottom: 30px;
+    }
+    button {
+      display: block;
+      width: 250px;
+      height: 70px;
+      margin: 0 auto;
+      border-color: #fed136;
+      border-radius: 5%;
+      background-color: #fed136;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+.services {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  text-align: center;
+  .servicestitle {
+    padding-bottom: 50px;
+    h1 {
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 48px;
+    }
+    p {
+      font-style: italic;
+      color: #848484;
+    }
+  }
+  .servicecol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    h2 {
+      font-weight: bold;
+    }
+    p {
+      color: #848484;
+    }
+    .icon-border {
+      border: 2px solid #fdcf32;
+      border-radius: 50%;
+      height: 70px;
+      width: 70px;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      i {
+        color: #fdcf32;
+      }
+    }
+  }
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}

@@ -14,10 +14,10 @@
     "build:clean": "rimraf css/*.css",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
-    "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "build-dev:sass": "node-sass scss/style.scss css/style.css --output-style expanded --source-map true -o",
     "watch": " npm-run-all build -p watch:*",
     "watch:browsersync": "browser-sync",
-    "watch:sassprefixer": "onchange -d 100 css/style.css onchange node-sass --output-style expanded --source-map true -o css sass -- autoprefixer-cli -o  css/style.css"
+    "watch:sassprefixer": "onchange -d 100 css/style.css onchange node-sass scss/style.scss css/style.css --output-style expanded --source-map true -o --autoprefixer-cli -o  css/style.css"
   },
   "repository": {
     "type": "git",
