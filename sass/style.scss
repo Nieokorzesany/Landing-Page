@@ -98,7 +98,7 @@ body {
 
 .services {
   padding-top: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   text-align: center;
   .servicestitle {
     padding-bottom: 50px;
@@ -134,6 +134,39 @@ body {
       i {
         color: #fdcf32;
       }
+    }
+  }
+}
+
+.portfolio {
+  padding-top: 80px;
+  background-color: #f7f7f7;
+  p {
+    color: #adadad;
+  }
+  .title {
+    text-align: center;
+    h1 {
+      text-transform: uppercase;
+    }
+  }
+  .projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .card {
+    @extend .title;
+    width: 350px;
+    margin: 40px 0;
+    background-color: #ffffff;
+    h2 {
+      font-weight: bold;
+    }
+    img {
+      max-width: 350px;
+      object-fit: cover;
     }
   }
 }
