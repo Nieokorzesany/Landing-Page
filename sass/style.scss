@@ -140,6 +140,7 @@ body {
 
 .portfolio {
   padding-top: 80px;
+  padding-bottom: 70px;
   background-color: #f7f7f7;
   p {
     color: #adadad;
@@ -155,18 +156,149 @@ body {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-  .card {
-    @extend .title;
-    width: 350px;
-    margin: 40px 0;
-    background-color: #ffffff;
-    h2 {
-      font-weight: bold;
+    .card {
+      @extend .title;
+      width: 350px;
+      margin: 40px 0;
+      background-color: #ffffff;
+      h2 {
+        font-weight: bold;
+      }
+      img {
+        max-width: 350px;
+        object-fit: cover;
+      }
     }
-    img {
-      max-width: 350px;
-      object-fit: cover;
+  }
+}
+
+.about {
+  padding: 70px 0;
+  .about-title {
+    text-align: center;
+    padding-bottom: 30px;
+    h1 {
+      text-transform: uppercase;
+      font-size: 40px;
+    }
+  }
+  .row {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .txtl {
+      width: 33%;
+      text-align: right;
+      p {
+        color: #b5b5b5;
+      }
+    }
+    .txtr {
+      @extend .txtl;
+      text-align: left;
+    }
+    .circlebox {
+      width: 25%;
+      text-align: center;
+      .line {
+        margin-top: 40px;
+        display: inline-block;
+        position: absolute;
+        border: 2px solid #f1f1f1;
+        height: 1100px;
+        z-index: -1;
+      }
+      .circle {
+        border: 6px #f1f1f1 solid;
+        border-radius: 50%;
+        height: 170px;
+        width: 170px;
+        background-image: url("https://images.pexels.com/photos/2194062/pexels-photo-2194062.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        object-fit: cover;
+        margin: auto;
+        position: relative;
+        top: 50%;
+        transform: perspective(1px) translateY(-50%);
+      }
+      .circle-last {
+        border: 6px #f1f1f1 solid;
+        border-radius: 50%;
+        height: 170px;
+        width: 170px;
+        background-color: #fed136;
+        margin: auto;
+        position: relative;
+        top: 50%;
+        transform: perspective(1px) translateY(-50%);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        p {
+          font-size: 20px;
+          color: white;
+          font-weight: bold;
+          margin: 5px 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .filler {
+      width: 33%;
+    }
+  }
+}
+
+.team {
+  padding: 70px 0;
+  background-color: #f9f9f9;
+  .team-title {
+    text-align: center;
+    h1 {
+      text-transform: uppercase;
+      font-size: 35px;
+    }
+    p {
+      color: #b5b5b5;
+    }
+  }
+  h1 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .team-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    .person-circle {
+      margin: 0 auto;
+      border-radius: 50%;
+      height: 210px;
+      width: 210px;
+      background-image: url("https://images.pexels.com/photos/2092709/pexels-photo-2092709.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+      background-size: cover;
+    }
+    .social-media-wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .media-circle {
+        border: 2px solid black;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        line-height: 60px;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+      }
     }
   }
 }
